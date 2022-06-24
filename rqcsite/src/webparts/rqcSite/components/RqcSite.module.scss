@@ -1,0 +1,87 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.rqcSite {
+  @import "~bootstrap/dist/css/bootstrap.css";        // base of bootstrap 
+  @import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+  .page_header{
+    color: #050838;
+    border-bottom: solid 1px #bbbaba7e;
+  }
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  blockquote { margin-top:1.2rem;}
+  .page_section_nav{
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+   a:hover, a:visited,.missing_field{color:#ff0000;}
+   .section_header{
+     margin-top: 1.4rem;
+     margin-bottom: 1.0rem;
+     color: #ff0000;
+   }
+   .overview_section,.sub_section_header{
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    
+   }
+   .overview_section div,.sub_section_header dl{
+    width: 95%;
+    padding: 0.8rem;
+    margin: auto;
+    margin-left: 0.0rem;
+   }
+   .overview_section div{
+    background-color:  #f0f8ff;
+   }
+   .sub_section_header dt{
+    margin-top: 1.4rem;
+    margin-bottom: 1.0rem;
+    color: #3b98eb;
+    border-bottom: solid 1px #f0f8ff;
+   }
+   .form_toggler{
+    cursor:pointer;
+    background:#eee;
+   }
+   .form_oggler:hover{
+    background:#fffeee;
+   }
+   .form_toggler a{
+     background:#f0f8ff;
+   }
+   
+   .form_toggler a.active,
+   .form_toggler a:hover{
+     background:#fffeee;
+     border-right:solid 1px #ddd;
+   }
+   .input_block{
+     background-color: #f0f8ff;
+     padding: 1.2rem;
+     margin-bottom:1.2rem;
+   }
+   .rqc_form h2 {
+     color:#0F204B;
+     margin-bottom: 1.2rem;
+   }
+   em{
+    width: 80%;
+    padding: 0.8rem;
+    margin: auto;
+    margin-left: 0.0rem;
+    border:solid 1px #f0f8ff;
+   }
+   .missing_field{
+     font-weight: bold;
+   }
+   @media screen and (max-width:405px) {
+     .container{
+       margin: 0rem;
+       padding: 0rem;
+    }
+   }
+  
+}

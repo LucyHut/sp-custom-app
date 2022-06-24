@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "e82f1b2b-b1bb-4262-bf1f-43739b07ed89",
+  "alias": "RqcSiteWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart","SharePointFullPage"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Other" },
+    "title": { "default": "RQC Access" },
+    "description": { "default": "The RQC Access App is used by JAX Budget Managers and Financial Analysts." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "RQC Access App",
+      "requestedby": {},
+      "user": {},
+      "action": "",
+      "requestor": "",
+      "requesttype": "",
+      "requestlocation":"",
+      "plocation": "",
+      "othrequestor": "",
+      "acctunit": [],
+      "activity": [],
+      "comment": ""
+    }
+  }]
+}
