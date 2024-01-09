@@ -14,6 +14,11 @@ import styles from "./../RqcSite.module.scss";
  this component handles the "Default Requestor Location" field.
  Including the api call to fetch the associated data
  and data rendering of the list
+
+ * Author: Lucie Hutchins, Senior DevOps Engineer
+ * Department: IT
+ * Company: The Jackson Laboratory
+ * Date: 2020
 */  
 const RqcLocationComponent = (props) => {
   const [locations, setLocations]= React.useState(null);

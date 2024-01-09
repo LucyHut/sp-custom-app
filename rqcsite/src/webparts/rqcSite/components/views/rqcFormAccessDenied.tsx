@@ -4,7 +4,7 @@ import styles from "./../RqcSite.module.scss";
 /* 
  This component is returns the access denied view
 
- * Author: Lucie Hutchins, DevOps Engineer
+ * Author: Lucie Hutchins, Senior DevOps Engineer
  * Department: IT
  * Company: The Jackson Laboratory
  * Date: 2020

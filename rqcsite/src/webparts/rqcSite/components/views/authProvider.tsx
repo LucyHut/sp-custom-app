@@ -12,7 +12,7 @@ import {
  This component is a HOC (High Order Component) to wrap around RQC Form Components.
  The AuthProvider HOC contains all of the logic for checking that the user is authenticated.
 
- * Author: Lucie Hutchins, DevOps Engineer
+ * Author: Lucie Hutchins, Senior DevOps Engineer
  * Department: IT
  * Company: The Jackson Laboratory
  * Date: 2020

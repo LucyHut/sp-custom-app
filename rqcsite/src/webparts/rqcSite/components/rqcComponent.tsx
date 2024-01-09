@@ -11,6 +11,7 @@ import {
 import ErrorMessage from "./ErrorMessage";
 import RqcFormOverview from "./Overview";
 import RqcFormComponent  from "./views/rqcFormComponent";
+import SnFormComponent from "./views/SnFormComponent";
 import styles from "./RqcSite.module.scss";
 
 /********************************************************************
@@ -21,7 +22,7 @@ import styles from "./RqcSite.module.scss";
  * Department: IT
  * Company: The Jackson Laboratory
  * Date: 2020
- * 
+ * Modified: 2023 
  * ******************************************************************/
 
 interface IRqcState {
@@ -32,7 +33,7 @@ class RqcComponent extends React.Component<AuthComponentProps, IRqcState> {
    constructor(props){
       super(props);
       this.state = {
-         activeTab:"1"
+         activeTab:"3"
       };
    }
    toggleTab(tab:string) {
@@ -49,7 +50,7 @@ class RqcComponent extends React.Component<AuthComponentProps, IRqcState> {
      }
      return (
        <div className={styles.container}>
-          <div className={styles.page_header}><h1>The RQC Access App</h1> </div>
+          <div className={styles.page_header}><h1>RIT Cloud Services Catalog Prototype</h1> </div>
           <Nav className={styles.page_section_nav} tabs>
            <NavItem> 
              <NavLink
@@ -69,6 +70,15 @@ class RqcComponent extends React.Component<AuthComponentProps, IRqcState> {
                    Forms
                 </NavLink>
                </NavItem>
+              <NavItem>
+                  <NavLink
+                    className={classnames({ active: this.state.activeTab === "3" })}
+                    onClick={() => { this.toggleTab("3"); }}
+                    style={{cursor:"pointer"}}
+                   >
+                   Cloud Services Catalog
+                </NavLink>
+              </NavItem>
           </Nav>
           <blockquote>
              <TabContent activeTab={this.state.activeTab}>
@@ -84,6 +94,14 @@ class RqcComponent extends React.Component<AuthComponentProps, IRqcState> {
                        context={this.props.context}
                        submitterAcctUnits={this.props.userData}/> 
                     </TabPane>
+                   <TabPane tabId="3">
+                     <SnFormComponent {...this.props}
+                       user_name={this.props.user["displayName"]}
+                       user_email={getSubmittermail(this.props.user["email"])}
+                       msClientLibrary={this.props.msGraphClientFactory}
+                       context={this.props.context}
+                       submitterAcctUnits={this.props.userData}/> 
+                  </TabPane>
                </TabContent>
            </blockquote>
         </div>

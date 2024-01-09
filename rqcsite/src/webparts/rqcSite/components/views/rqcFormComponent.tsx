@@ -14,7 +14,7 @@ import { IDigestCache, DigestCache } from '@microsoft/sp-http';
  * This component is a HOC (High Order Component) to render different
  *  forms based on user's selection.
  * 
- * Author: Lucie Hutchins, DevOps Engineer
+ * Author: Lucie Hutchins, Senior DevOps Engineer
  * Department: IT
  * Company: The Jackson Laboratory
  * Date: 2020

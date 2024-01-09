@@ -26,10 +26,10 @@ This component has two functions:
 Note: Before deploying this to PROD, make sure service-now email is updated
 to production 
 
- * Author: Lucie Hutchins, DevOps Engineer
+ * Author: Lucie Hutchins, Senior DevOps Engineer
  * Department: IT
  * Company: The Jackson Laboratory
- * Date: 2020
+ * Date: 2023
 
 ******************************************************************************/
 const FormModal=(props: any)=>{
@@ -47,7 +47,7 @@ const FormModal=(props: any)=>{
     //We need to update this from jaxqa to production address
     //jax@service-now.com   -- production environment
     //jaxqa@service-now.com -- test environment
-    const sn_email="jax@service-now.com"; 
+    const sn_email="lucie.hutchins@jax.org"; 
 
     const toggle = () => setModal(!modal);
 
